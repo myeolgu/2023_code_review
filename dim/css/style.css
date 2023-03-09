@@ -22,3 +22,5 @@ body {width:100vw; height: 100vh;}
 .popup_box li { flex:0 0 calc(50%-30px); }
 .popup_box_inner > h3 { font-size:18px; font-weight: 500; }
 .popup_box_inner > dt { font-size:14px; font-weight: 300; margin-top: 10px; }
+
+/* media 반응형 작업 */
