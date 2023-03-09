@@ -1,0 +1,24 @@
+body {width:100vw; height: 100vh;}
+.button_popup { position:relative; width: 80px; height: 30px; left:50%; top:50%; transform: translate(-50%,-50%); border:1px solid black;}
+
+/* popup_dim 작업 */
+.popup_dim { position: fixed; left:0; top:0; right: 0; bottom:0; background: rgba(0,0,0,0.8); }
+
+/* popup_wrap 작업 */
+.popup_wrap { position: fixed; width:40%; height: 80%; background: white; left:50%; top:50%; transform: translate(-50%,-50%);  }
+.popup_header { position: relative; display:flex;  width:100%; height: 200px; justify-content: space-between; background: url('../images/popup_header01.png') no-repeat; background-size: 100%; background-position: center; }
+.popup_close { position: relative; width:25px; height:25px; cursor: pointer; top:15px; right:15px;  }
+.popup_close a::after { content:'';  position: absolute; width:25px; height: 2px; background: white; transform:rotate(45deg); top:50%; }
+.popup_close a::before { content:''; position: absolute; width:25px; height: 2px; background: white; transform:rotate(-45deg); top:50%; }
+.popup_header_inner { position: relative; display: flex; left:5%; flex-wrap: wrap; flex-direction: column; justify-content: center; color: white; }
+.popup_header_inner > dt { font-size: 24px;  font-weight: bold;}
+.popup_header_inner > dl { font-size: 20px;  font-weight: normal;}
+
+/* popup_container 작업 */
+.popup_container { min-width:100%; }
+.popup_inner { position: relative; margin: 0 auto;  max-width: 90%; margin-top: 30px; box-sizing: border-box; }
+.popup_inner > h2 { font-size:26px; font-weight: bold; }
+.popup_box { display: flex; margin-top: 30px; justify-content:space-between;}
+.popup_box li { flex:0 0 calc(50%-30px); }
+.popup_box_inner > h3 { font-size:18px; font-weight: 500; }
+.popup_box_inner > dt { font-size:14px; font-weight: 300; margin-top: 10px; }

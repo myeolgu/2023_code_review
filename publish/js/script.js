@@ -3,10 +3,8 @@ const menubox = document.querySelectorAll('.gnb_menu li');
 
 console.log(menubox);
 
-
 const dropmenu = document.querySelector('.header_dropbox');
 const header = document.getElementById('header');
-
 
 console.dir(menubox);
 
