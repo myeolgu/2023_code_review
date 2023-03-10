@@ -1,0 +1,16 @@
+const popupEvent = document.querySelectorAll('.button_popup');
+
+popupEvent.forEach(popup=>{
+    popup.addEventListener("click",()=>{
+        popupDim.style.display = "block";
+        document.body.style.overflowY = "hidden";
+
+        const popupCall = popup.dataset.call
+        console.log(popupCall)
+        const popupNm = document.querySelector(`[data-popup=${popupCall}]`)
+
+        setTimeout(() => {
+            popupNm.style.display = "block";
+        },100);
+    })
+})
