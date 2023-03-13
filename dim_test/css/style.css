@@ -1,0 +1,43 @@
+/* 실험용 세팅 */
+body {width:100vw; height: 100vh; overflow-x: hidden; }
+.body_height { width: 100%; height: 200vh; }
+.button_popup { position:relative; width: 80px; height: 30px; left:50%; top:50%; transform: translate(-50%,-50%); border:1px solid black;}
+
+/* popup_dim 작업 */
+.popup_dim { position: fixed; display:none; left:0; top:0; right: 0; bottom:0; background: rgba(0,0,0,0.6); cursor: pointer; }
+.pop_active { display: block !important; animation-duration: 0.4s;}
+
+/* popup_wrap 작업 */
+.popup_wrap { position: fixed;  display:none; width:50%; height: 80%; background: white; left:50%; top:50%; margin-top:100px; opacity: 0; transform: translate(-50%,-50%); transition-duration: 0.4s;  }
+.popup_header { position: relative; display:flex;  width:100%; height: 20%; justify-content: space-between; background: url('../images/popup_header01.png') no-repeat; background-size: 200%; background-position: center; }
+.popup_close { position: relative; width:25px; height:25px; cursor: pointer; top:15px; right:15px;  }
+.popup_close a::after { content:'';  position: absolute; width:25px; height: 2px; background: white; transform:rotate(45deg); top:50%; }
+.popup_close a::before { content:''; position: absolute; width:25px; height: 2px; background: white; transform:rotate(-45deg); top:50%; }
+.popup_header_inner { position: relative; display: flex; left:5%; flex-wrap: wrap; flex-direction: column; justify-content: center; color: white; }
+.popup_header_inner > dt { font-size: 24px;  font-weight: bold;}
+.popup_header_inner > dl { font-size: 20px;  font-weight: normal;}
+
+/* popup_container 작업 */
+.popup_container { position: relative; margin: 0 auto; height: 80%; padding: 50px 50px 0 50px; box-sizing: border-box; overflow: auto; }
+.popup_inner { position: relative; margin: 0 auto; box-sizing: border-box; height: 100%;  }
+.popup_inner > h2 { font-size:26px; font-weight: bold; }
+.popup_box { display: flex; margin-top: 30px; justify-content:space-between; flex-wrap: wrap;}
+.popup_box li { flex:0 0 calc(50% - 30px); }
+.popup_box li:nth-child(n+3) { margin-top: 20px; }
+.popup_box_inner > h3 { font-size:20px; font-weight: 500; }
+.popup_box_inner > dt { font-size:17px; font-weight: 300; margin-top: 10px; }
+.popup_box_inner > dl { font-size:13px; font-weight: 300; margin-top: 5px;}
+
+/* media 반응형 작업 */
+@media screen and (max-width:1440px) {
+    .popup_wrap { width:70%; }
+}
+
+@media screen and (max-width:768px) {
+    .popup_wrap { width:100%;height: 100%; }
+    .popup_box li { flex:0 0 100%;}
+    .popup_container { padding:20px 20px 0 20px; }
+    .popup_box li:nth-child(n+3) { margin-top: 0px; }
+    .popup_box li:nth-child(n+2) { margin-top: 20px; }
+    body { overflow-y: hidden;}
+}

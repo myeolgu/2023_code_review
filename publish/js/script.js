@@ -1,21 +1,24 @@
 const menubox = document.querySelectorAll('.gnb_menu li');
-// const menubox_list = menubox.map().pop();
-
-console.log(menubox);
-
 const dropmenu = document.querySelector('.header_dropbox');
 const header = document.getElementById('header');
 
 console.dir(menubox);
 
-menubox.forEach(el =>
-    el.addEventListener("mouseover", () => {
-        dropmenu.style.height = "430px";
-        header.style.backgroundColor = "white";
+menubox.forEach(e =>
+    e.addEventListener("mouseover", () => {
+        // dropmenu.style.display = "block";
+        // header.style.backgroundColor = "white";
+        dropmenu.classList.add('active');
+        setTimeout(() => {
+
+        },100)
     })
 )
 
 dropmenu.addEventListener("mouseleave", function() {
-    header.style.backgroundColor = "";
-    dropmenu.style.height = "0";
+    dropmenu.classList.remove('active');
+    setTimeout(() => {
+
+    },1000)
+
 })
