@@ -13,7 +13,7 @@
 <body>
 	<div class="container">
 		<header id="header">
-			<section class="header_inner">
+			<div class="header_inner">
 				<div class="logo">
 					<a href="javascript:void(0)"><span class="hdtext">화성시 자원봉사 온라인 플랫폼 로고</span></a>
 				</div>
@@ -34,130 +34,84 @@
 						</ul>
 					</div>
 
-					<nav class="gnb_main">
-						<ul class="gnb_menu">
-							<li><a href="javascript:void(0)" data-id="1">봉사참여</a></li>
-							<li><a href="javascript:void(0)" data-id="2">기회봉사</a></li>
-							<li><a href="javascript:void(0)" data-id="3">봉사교육</a></li>
-							<li><a href="javascript:void(0)" data-id="4">봉사소식</a></li>
-							<li><a href="javascript:void(0)" data-id="5">자료실</a></li>
-							<li><a href="javascript:void(0)" data-id="6">마이페이지</a></li>
-							<li><a href="javascript:void(0)"><i class="search"><span class="hdtext">검색</span></i></a></li>
-						</ul>
-					</nav>
+					<div class="gnb_container">
+						<nav class="gnb_main">
+							<ul class="gnb_menu">
+								<li><a href="javascript:void(0)">봉사참여</a></li>
+								<li><a href="javascript:void(0)">기회봉사</a></li>
+								<li><a href="javascript:void(0)">봉사교육</a></li>
+								<li><a href="javascript:void(0)">봉사소식</a></li>
+								<li><a href="javascript:void(0)">자료실</a></li>
+								<li><a href="javascript:void(0)">마이페이지</a></li>
+							</ul>
+						</nav>
+						<a href="javascript:void(0)"><i class="search"><span class="hdtext">검색</span></i></a>
+					</div>
 				</div>
+			</div>
 
-
-			</section>
 			<div class="header_dropbox">
 				<nav class="header_inner">
 					<ul class="gnb_menu_list">
 						<li>
-							<p>봉사참여</p>
-							<a href="javascript:void(0)"><dt>자원봉사 일감정보</dt></a>
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>재능기부</dt></a>
-								<ul class="gnb_menu_list_sub_list">
-									<li><a href="javascript:void(0)"><dt>재능기부 목록</dt></a></li>
-									<li><a href="javascript:void(0)"><dt>재능기부 등록</dt></a></li>
-								</ul>
-							</div>
-
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>봉사 소모임</dt></a>
-								<ul class="gnb_menu_list_sub_list">
-									<li><a href="javascript:void(0)"><dt>봉사 소모임 제도</dt></a></li>
-									<li><a href="javascript:void(0)"><dt>봉사 소모임 안내</dt></a></li>
-								</ul>
-							</div>
+							<a href="javascript:void(0)">봉사참여</a>
+							<ul class="gnb_menu_inner">
+								<li><a href="javascript:void(0)">자원봉사 일감정보</a></li>
+								<li><a href="javascript:void(0)">재능기부</a></li>
+								<li><a href="javascript:void(0)">봉사 소모임</a></li>
+								<li><a href="javascript:void(0)">마일리지(포인트)기부</a></li>
+							</ul>
 						</li>
 
 						<li>
-							<p>기획봉사</p>
-							<a href="javascript:void(0)"><dt>자원봉사 소개</dt></a>
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>기획 공모 신청</dt></a>
-								<ul class="gnb_menu_list_sub_list">
-									<li><a href="javascript:void(0)"><dt>기획 공모 목록</dt></a></li>
-									<li><a href="javascript:void(0)"><dt>심사결과</dt></a></li>
-								</ul>
-							</div>
-
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>기획 봉사결과 공유</dt></a>
-								<ul class="gnb_menu_list_sub_list">
-									<li><a href="javascript:void(0)"><dt>우수사례</dt></a></li>
-									<li><a href="javascript:void(0)"><dt>전체결과</dt></a></li>
-								</ul>
-							</div>
-
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>봉사/공헌활동 제안</dt></a>
-								<ul class="gnb_menu_list_sub_list">
-									<li><a href="javascript:void(0)"><dt>제안목록</dt></a></li>
-									<li><a href="javascript:void(0)"><dt>제안하기</dt></a></li>
-								</ul>
-							</div>
+							<a href="javascript:void(0)">기획봉사</a>
+							<ul class="gnb_menu_inner">
+								<li><a href="javascript:void(0)">소개</a></li>
+								<li><a href="javascript:void(0)">기획 공모 신청</a></li>
+								<li><a href="javascript:void(0)">기획 봉사결과 공유</a></li>
+								<li><a href="javascript:void(0)">봉사/공헌활동 제안</a></li>
+							</ul>
 						</li>
 
 						<li>
-							<p>봉사교육</p>
-							<a href="javascript:void(0)"><dt>교육안내</dt></a>
-							<a href="javascript:void(0)">안내</a>
-							<a class="list_padding" href="javascript:void(0)">FAQ</a>
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>교육신청</dt></a>
-								<ul class="gnb_menu_list_sub_list">
-									<li><a href="javascript:void(0)"><dt>오프라인 교육</dt></a></li>
-									<li><a href="javascript:void(0)"><dt>온라인 교육</dt></a></li>
-								</ul>
-							</div>
+							<a href="javascript:void(0)">봉사교육</a>
+							<ul class="gnb_menu_inner">
+								<li><a href="javascript:void(0)">교육안내</a></li>
+								<li><a href="javascript:void(0)">교육신청</a></li>
+							</ul>
 						</li>
 
 						<li>
-							<p>봉사소식</p>
-							<a href="javascript:void(0)"><dt>공지사항</dt></a>
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>우수자원봉사자 제도</dt></a>
-								<ul class="gnb_menu_list_sub_list">
-									<li><a href="javascript:void(0)"><dt>인센티브 총괄 안내</dt></a></li>
-									<li><a href="javascript:void(0)"><dt>할인 안내</dt></a></li>
-									<li><a href="javascript:void(0)"><dt>마일리지 제도 안내</dt></a></li>
-								</ul>
-							</div>
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>문의사항</dt></a>
-							</div>
+							<a href="javascript:void(0)">봉사소식</a>
+							<ul class="gnb_menu_inner">
+								<li><a href="javascript:void(0)">공지사항</a></li>
+								<li><a href="javascript:void(0)">우수자원봉사자 우대제도소개</a></li>
+								<li><a href="javascript:void(0)">봉사소모임</a></li>
+								<li><a href="javascript:void(0)">문의사항</a></li>
+							</ul>
 						</li>
 
 						<li>
-							<p>자료실</p>
-							<a href="javascript:void(0)"><dt>봉사활동 사례공유</dt></a>
-							<a href="javascript:void(0)">봉사활동 운영결과</a>
-							<a class="list_padding" href="javascript:void(0)">기획봉사 운영결과</a>
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>일반자료실</dt></a>
-							</div>
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>(중앙)자원봉사아카이브</dt></a>
-							</div>
+							<a href="javascript:void(0)">자료실</a>
+							<ul class="gnb_menu_inner">
+								<li><a href="javascript:void(0)">봉사활동 운영결과</a></li>
+								<li><a href="javascript:void(0)">기획봉사 운영결과</a></li>
+								<li><a href="javascript:void(0)">지원봉사 아카이브</a></li>
+							</ul>
 						</li>
-
 
 						<li>
-							<p>마이페이지</p>
-							<a href="javascript:void(0)"><dt>전체 현황판</dt></a>
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>내 정보 변경</dt></a>
-							</div>
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>마일리지</dt></a>
-							</div>
-							<div class="gnb_menu_list_sub">
-								<a href="javascript:void(0)"><dt>일감관리</dt></a>
-							</div>
+							<a href="javascript:void(0)">마이페이지</a>
+							<ul class="gnb_menu_inner">
+								<li><a href="javascript:void(0)">전체 현황판</a></li>
+								<li><a href="javascript:void(0)">자원봉사 시간</a></li>
+								<li><a href="javascript:void(0)">지역공헌 활동횟수</a></li>
+								<li><a href="javascript:void(0)">활동내역 상세</a></li>
+								<li><a href="javascript:void(0)">예정활동 내역</a></li>
+								<li><a href="javascript:void(0)">내정보 변경</a></li>
+								<li><a href="javascript:void(0)">마일리지</a></li>
+							</ul>
 						</li>
-
 					</ul>
 				</nav>
 			</div>
@@ -165,10 +119,9 @@
 
 		<!-- 백그라운드 설정 -->
 		<main>
-			<section class="main_section"></div>
+			<section class="main_section">
+			</section>
 		</main>
 	</div>
-
-	<script ></script>
 </body>
 </html>

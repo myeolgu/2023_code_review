@@ -1,20 +1,19 @@
-const menubox = document.querySelectorAll('.gnb_menu li [data-id]');
+const menubox = document.querySelectorAll('.gnb_menu li');
 const dropmenu = document.querySelector('.header_dropbox');
 const header = document.getElementById('header');
 
 menubox.forEach(e =>
     e.addEventListener("mouseover", () => {
-        dropmenu.classList.add('active');
+        dropmenu.style.display = "block";
         setTimeout(() => {
-
+            header.classList.add('active');
         },100)
     })
 )
 
 dropmenu.addEventListener("mouseleave", function() {
-    dropmenu.classList.remove('active');
+    header.classList.remove('active');
     setTimeout(() => {
-
-    },1000)
-
+        dropmenu.style.display = "none";
+    },500)
 })
